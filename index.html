@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EXCEEED Strategic Legal Counsel</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: url("assets/wht_bckgrnd.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    html, body {
+      height: 100%;
+      min-height: 480px;
+      min-width: 320px;
+    }
+
+    .wrap { min-height: 100%; }
+    .main {
+      overflow:auto;
+      padding-bottom: 50px;
+    }
+
+    .footer {
+      position: relative;
+      margin-top: -50px; /* negative value of footer height */
+      height: 50px;
+      clear:both;
+      text-align: center;
+      font-size: 1.1em;
+      color: #416BA9;
+    } 
+
+    .nav {
+      padding: 30px 20px 0px 0px;
+      font-weight: 300;
+      font-size: 16px;
+    }
+    .nav-content {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .nav li {
+      display: inline-block;
+      padding-left: 12px;
+    }
+
+    .button {
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #0F1F6B;
+      color: #ffffff;
+    }
+
+    .button.outline.blue {
+      background-color: transparent;
+      border: 1px solid #0F1F6B;
+      color: #0F1F6B;
+    }
+
+    .nav a, .nav a:hover, .nav a:active, .nav a:visited {
+      color: #0F1F6B;
+      text-decoration: none;
+    }
+
+    .right {
+      float: right;
+    }
+    .clear {
+      clear: both;
+    }
+
+    .header {
+      position: relative;
+      margin: 100px 0px;
+      text-align: center;
+    }
+    .header .logo {
+      position: relative;
+      max-width: 845px;
+      margin: 0 auto;
+      padding: 0px 20px;
+    }
+    .header img {
+      height: auto;
+      width: 100%;
+      display: block;
+    }
+    .tagline {
+      font-size: 1.5em;
+      margin-top: 80px;
+      color: #416BA9;
+      position: relative;
+    }
+    .tagline span {
+      position: absolute;
+      top: 0px;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+    .tagline .hide-text {
+      opacity: 0;
+      z-index: -10;
+    }
+    .tagline .text1 {
+      -webkit-animation: text1 5s infinite; /* Safari 4+ */
+      -moz-animation:    text1 5s infinite; /* Fx 5+ */
+      -o-animation:      text1 5s infinite; /* Opera 12+ */
+      animation:         text1 5s infinite; /* IE 10+, Fx 29+ */
+    }
+    .tagline .text2 {
+      -webkit-animation: text2 5s infinite; /* Safari 4+ */
+      -moz-animation:    text2 5s infinite; /* Fx 5+ */
+      -o-animation:      text2 5s infinite; /* Opera 12+ */
+      animation:         text2 5s infinite; /* IE 10+, Fx 29+ */
+    }
+    .tagline .text3 {
+      -webkit-animation: text3 5s infinite; /* Safari 4+ */
+      -moz-animation:    text3 5s infinite; /* Fx 5+ */
+      -o-animation:      text3 5s infinite; /* Opera 12+ */
+      animation:         text3 5s infinite; /* IE 10+, Fx 29+ */
+    }
+
+    @-webkit-keyframes text1 {
+        0%   {opacity: 0;}
+
+        11%  {opacity: 1;}
+        22%  {opacity: 1;}
+
+        34%  {opacity: 0;}
+
+        45%  {opacity: 0;}
+        56%  {opacity: 0;}
+
+        67%  {opacity: 0;}
+
+        78%  {opacity: 0;}
+        89%  {opacity: 0;}
+
+        100% {opacity: 0;}
+    } 
+
+    /* Standard syntax */ 
+    @keyframes text1 {
+        0%   {opacity: 0;}
+
+        11%  {opacity: 1;}
+        22%  {opacity: 1;}
+
+        34%  {opacity: 0;}
+
+        45%  {opacity: 0;}
+        56%  {opacity: 0;}
+
+        67%  {opacity: 0;}
+
+        78%  {opacity: 0;}
+        89%  {opacity: 0;}
+
+        100% {opacity: 0;}
+    }
+
+    @-webkit-keyframes text2 {
+        0%   {opacity: 0;}
+
+        11%  {opacity: 0;}
+        22%  {opacity: 0;}
+
+        34%  {opacity: 0;}
+
+        45%  {opacity: 1;}
+        56%  {opacity: 1;}
+
+        67%  {opacity: 0;}
+
+        78%  {opacity: 0;}
+        89%  {opacity: 0;}
+
+        100% {opacity: 0;}
+    } 
+
+    /* Standard syntax */ 
+    @keyframes text2 {
+        0%   {opacity: 0;}
+
+        11%  {opacity: 0;}
+        22%  {opacity: 0;}
+
+        34%  {opacity: 0;}
+
+        45%  {opacity: 1;}
+        56%  {opacity: 1;}
+
+        67%  {opacity: 0;}
+
+        78%  {opacity: 0;}
+        89%  {opacity: 0;}
+
+        100% {opacity: 0;}
+    }
+
+    @-webkit-keyframes text3 {
+        0%   {opacity: 0;}
+
+        11%  {opacity: 0;}
+        22%  {opacity: 0;}
+
+        34%  {opacity: 0;}
+
+        45%  {opacity: 0;}
+        56%  {opacity: 0;}
+
+        67%  {opacity: 0;}
+
+        78%  {opacity: 1;}
+        89%  {opacity: 1;}
+
+        100% {opacity: 0;}
+    } 
+
+    /* Standard syntax */ 
+    @keyframes text3 {
+        0%   {opacity: 0;}
+
+        11%  {opacity: 0;}
+        22%  {opacity: 0;}
+
+        34%  {opacity: 0;}
+
+        45%  {opacity: 0;}
+        56%  {opacity: 0;}
+
+        67%  {opacity: 0;}
+
+        78%  {opacity: 1;}
+        89%  {opacity: 1;}
+
+        100% {opacity: 0;}
+    }
+
+    /*Opera Fix*/
+    body:before {/* thanks to Maleika (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+    }
+
+
+    @media  screen and (max-width: 500px) {
+      body {
+        font-size: 12px;
+      }
+      .tagline {
+        font-size: 1.5em;
+        margin-top: 30px;
+        color: #416BA9;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="main">
+    <section class="nav">
+      <ul class="nav-content right">
+        <li><a href="tel:1-208-781-2800">1-208-781-2800</a></li>
+        <li><a class="button outline blue" href="mailto:test@email.com">Contact Us</a></li>
+      </ul>
+      <div class="clear"></div>
+    </section>
+    <section class="header">
+      <div class="header-content">
+        <div class="logo"><img src="assets/Logo_Blue.png" /></div>
+        <div class="tagline">
+          <span class="text1">Your goals...</span>
+          <span class="text2 hide-text">Your understanding...</span>
+          <span class="text3 hide-text">Your expectations...</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<section class="footer"><span>Full website coming soon</span></section>
+</body>
+</html>
