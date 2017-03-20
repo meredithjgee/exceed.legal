@@ -1,301 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EXCEED Strategic Legal Counsel</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style type="text/css">
-  @-ms-viewport{
-    width: device-width;
-  }
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background: url("assets/wht_bckgrnd.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      font-family: 'Lato', sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-    }
-    html, body {
-      height: 100%;
-      min-height: 500px;
-      min-width: 320px;
-    }
-
-    .wrap { min-height: 100%; }
-    .main {
-      overflow:auto;
-      padding-bottom: 50px;
-    }
-
-    .footer {
-      position: relative;
-      margin-top: -50px; /* negative value of footer height */
-      height: 50px;
-      clear:both;
-      text-align: center;
-      font-size: 1.1em;
-      color: #416BA9;
-    } 
-
-    .nav {
-      padding: 30px 20px 0px 0px;
-      font-weight: 300;
-      font-size: 16px;
-    }
-    .nav-content {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .nav li {
-      display: inline-block;
-      padding-left: 12px;
-    }
-
-    .button {
-      padding: 10px;
-      border-radius: 4px;
-      background-color: #0F1F6B;
-      color: #ffffff;
-    }
-
-    .button.outline.blue {
-      background-color: transparent;
-      border: 1px solid #0F1F6B;
-      color: #0F1F6B;
-    }
-
-    .nav a, .nav a:hover, .nav a:active, .nav a:visited {
-      color: #0F1F6B;
-      text-decoration: none;
-    }
-
-    .right {
-      float: right;
-    }
-    .clear {
-      clear: both;
-    }
-
-    .header {
-      position: relative;
-      margin: 170px 0px 20px;
-      text-align: center;
-    }
-    .header .logo {
-      position: relative;
-      max-width: 605px;
-      margin: 0 auto;
-      padding: 0px 20px;
-    }
-    .header img {
-      height: auto;
-      width: 100%;
-      display: block;
-    }
-    .tagline {
-      font-size: 1.5em;
-      margin-top: 80px;
-      color: #416BA9;
-      position: relative;
-    }
-    .tagline span {
-      position: absolute;
-      top: 0px;
-      text-align: center;
-      display: block;
-      width: 100%;
-    }
-    .tagline .hide-text {
-      opacity: 0;
-      z-index: -10;
-    }
-    .tagline .text1 {
-      -webkit-animation: text1 8s infinite; /* Safari 4+ */
-      -moz-animation:    text1 8s infinite; /* Fx 5+ */
-      -o-animation:      text1 8s infinite; /* Opera 12+ */
-      animation:         text1 8s infinite; /* IE 10+, Fx 29+ */
-    }
-    .tagline .text2 {
-      -webkit-animation: text2 8s infinite; /* Safari 4+ */
-      -moz-animation:    text2 8s infinite; /* Fx 5+ */
-      -o-animation:      text2 8s infinite; /* Opera 12+ */
-      animation:         text2 8s infinite; /* IE 10+, Fx 29+ */
-    }
-    .tagline .text3 {
-      -webkit-animation: text3 8s infinite; /* Safari 4+ */
-      -moz-animation:    text3 8s infinite; /* Fx 5+ */
-      -o-animation:      text3 8s infinite; /* Opera 12+ */
-      animation:         text3 8s infinite; /* IE 10+, Fx 29+ */
-    }
-
-    @-webkit-keyframes text1 {
-        0%   {opacity: 0;}
-
-        11%  {opacity: 1;}
-        22%  {opacity: 1;}
-
-        34%  {opacity: 0;}
-
-        45%  {opacity: 0;}
-        56%  {opacity: 0;}
-
-        67%  {opacity: 0;}
-
-        78%  {opacity: 0;}
-        89%  {opacity: 0;}
-
-        100% {opacity: 0;}
-    } 
-
-    /* Standard syntax */ 
-    @keyframes text1 {
-        0%   {opacity: 0;}
-
-        11%  {opacity: 1;}
-        22%  {opacity: 1;}
-
-        34%  {opacity: 0;}
-
-        45%  {opacity: 0;}
-        56%  {opacity: 0;}
-
-        67%  {opacity: 0;}
-
-        78%  {opacity: 0;}
-        89%  {opacity: 0;}
-
-        100% {opacity: 0;}
-    }
-
-    @-webkit-keyframes text2 {
-        0%   {opacity: 0;}
-
-        11%  {opacity: 0;}
-        22%  {opacity: 0;}
-
-        34%  {opacity: 0;}
-
-        45%  {opacity: 1;}
-        56%  {opacity: 1;}
-
-        67%  {opacity: 0;}
-
-        78%  {opacity: 0;}
-        89%  {opacity: 0;}
-
-        100% {opacity: 0;}
-    } 
-
-    /* Standard syntax */ 
-    @keyframes text2 {
-        0%   {opacity: 0;}
-
-        11%  {opacity: 0;}
-        22%  {opacity: 0;}
-
-        34%  {opacity: 0;}
-
-        45%  {opacity: 1;}
-        56%  {opacity: 1;}
-
-        67%  {opacity: 0;}
-
-        78%  {opacity: 0;}
-        89%  {opacity: 0;}
-
-        100% {opacity: 0;}
-    }
-
-    @-webkit-keyframes text3 {
-        0%   {opacity: 0;}
-
-        11%  {opacity: 0;}
-        22%  {opacity: 0;}
-
-        34%  {opacity: 0;}
-
-        45%  {opacity: 0;}
-        56%  {opacity: 0;}
-
-        67%  {opacity: 0;}
-
-        78%  {opacity: 1;}
-        89%  {opacity: 1;}
-
-        100% {opacity: 0;}
-    } 
-
-    /* Standard syntax */ 
-    @keyframes text3 {
-        0%   {opacity: 0;}
-
-        11%  {opacity: 0;}
-        22%  {opacity: 0;}
-
-        34%  {opacity: 0;}
-
-        45%  {opacity: 0;}
-        56%  {opacity: 0;}
-
-        67%  {opacity: 0;}
-
-        78%  {opacity: 1;}
-        89%  {opacity: 1;}
-
-        100% {opacity: 0;}
-    }
-
-    /*Opera Fix*/
-    body:before {/* thanks to Maleika (Kohoutec)*/
-    content:"";
-    height:100%;
-    float:left;
-    width:0;
-    margin-top:-32767px;/* thank you Erik J - negate effect of float*/
-    }
-
-
-    @media  screen and (max-width: 500px) {
-      body {
-        font-size: 12px;
-      }
-      .tagline {
-        font-size: 1.5em;
-        margin-top: 30px;
-        color: #416BA9;
-      }
-    }
-  </style>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/font/font.css" />
+  <link rel="stylesheet" type="text/css" href="assets/styles.css" />
 </head>
 <body>
-<div class="wrap">
-  <div class="main">
-    <section class="nav">
-      <ul class="nav-content right">
-        <li><a href="tel:208-297-5959">208-297-5959</a></li>
-        <li><a class="button outline blue" href="mailto:igee@exceed.legal">Contact Us</a></li>
+<header class="header">
+  <div class="nav-bar">
+    <div class="container">
+      <h1 class="logo">EXCEED: Strategic Legal Counsel</h1>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+<!--         <li><a href="/meet-the-team/">Meet the Team</a></li>
+        <li><a href="/practice-areas/">Practice Areas</a></li>
+        <li><a href="https://blog.exceed.legal">Blog</a></li> -->
+        <li><a href="#contact-us">Contact</a></li>
       </ul>
-      <div class="clear"></div>
-    </section>
-    <section class="header">
-      <div class="header-content">
-        <div class="logo"><img src="assets/Logo_Blue.png" /></div>
-        <div class="tagline"> 
-          <span class="text1">Exceed your understanding...</span>
-          <span class="text2 hide-text">your goals...</span>
-          <span class="text3 hide-text">your expectations.</span>
-        </div>
-      </div>
-    </section>
+    </div>
   </div>
-</div>
-<section class="footer"><span>Full website coming soon</span></section>
+  <div class="header-content">
+    <h2 class="fancy-title">
+      <ul class="jack">
+        <li><b class="exc">Exceed</b> <span>Your <b>Understanding</b></span><i> With Us</i></li>
+        <li><b class="exc">Exceed</b> <span>Your <b>Expectations</b></span><i>  With Us</i></li>
+        <li><b class="exc">Exceed</b> <span>Your <b>Goals</b></span><i> With Us</i></li>
+      </ul>
+    </h2>
+  </div>
+  <div class="contact-info">
+    <div class="container">
+      <a href="tel:208-781-2800">208-781-2800</a>
+      <a href="mailto:info@exceed.legal">info@exceed.legal</a>
+      <a href="#location">Visit Us Downtown</a>
+    </div>
+  </div>
+</header>
+<section class="who-we-are">
+  <div class="container v-center">
+    <div class="col-6">
+      <div>
+      <div class="section-header">
+        <h3>Who We Are</h3>
+        <hr />
+      </div>
+      <p>Exceed Legal is a business and real estate law firm providing counsel to companies, entrepreneurs, developers, and individuals throughout the Intermountain West. We deliver creative legal solutions, strategic advice, and value beyond expectations to help our clients achieve the extraordinary. <!-- <a class="learn-more" href="#">Learn More</a> --></p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="col-5 col-img">
+      <img src="assets/img/conference.jpg"
+        srcset="assets/img/conference@2x.jpg 2x,
+                assets/img/conference@3x.jpg 3x"
+        alt="Exceed Legal Conference">
+    </div>
+  </div>
+</section>
+<section class="feature-blocks">
+  <div class="top-padding"></div>
+  <div style="float: left;width: 100%;">
+  <div class="container v-center">
+    <div class="holder">
+      <a class="col-6 business">Business</a>
+      <a class="col-6 securities">Securities &amp; Finance</a>
+    </div>
+    <div class="holder holder-2">
+      <div class="col-8" style="display: flex; flex-direction: row;">
+        <a class="col-4 startups">Startups</a>
+        <a class="col-4 asset-planning">Asset Planning</a>
+      </div>
+      <a class="col-4 real-estate">Real Estate</a>
+    </div>
+  </div>
+  </div>
+  <div style="clear: both;"></div>
+  <div class="bottom-padding"></div>
+</section>
+<!-- <section class="tests">
+  <h3>What Our Clients Are Saying</h3>
+</section> -->
+<section class="team">
+  <div class="container">
+    <h3>Why Exceed?</h3>
+    <img class="team-image" src="assets/img/team.jpg"
+      srcset="assets/img/team@2x.jpg 2x,
+              assets/img/team@3x.jpg 3x"
+      alt="Picture of Ian and Erik">
+    <p>Let&#39;s face it. There are a lot of lawyers out there. How do you wade through the &quot;alphabet soup&quot; of names and pedigrees? The most effective attorneys possess the depth of knowledge and real-world experience tailor made to who you are and what you do. They&#39;re seasoned professionals who know and care about you and your business. They understand your needs, speak your language, and respect your time and resources. You expect them to harness the latest technology without compromising personal touch. They are respected leaders in their areas of practice.</p>
+    <p>This describes our team at Exceed Legal and why we are distinct. With decades of experience as attorneys, entrepreneurs and business owners, our team provides strategic advice and delivers value beyond expectations to help you achieve the extraordinary.</p>
+    <div style="display: flex; margin-bottom: 54px;">
+      <div class="col-6">
+        <img class="sig_img" src="assets/img/erik_sig.png" style="display: block;">
+        <span>Erik Bolinder</span>
+      </div>
+      <div class="col-6">
+        <img class="sig_img" src="assets/img/ian_sig.png" style="display: block;">
+        <span>Ian Gee</span>
+      </div>
+    </div>
+    <div class="t-c">
+<!--       <a class="btn meet-team" href="">Meet Our Team</a> -->
+    </div>
+  </div>
+</section>
+<footer class="footer" id="contact-us">
+  <div class="wrapper">
+    <h3>Contact Us</h3>
+    <div class="container">
+      <form class="col-6" style="display: flex; flex-direction: column;" action="https://formspree.io/info@exceed.legal" method="POST">
+        <div class="form-row">
+          <div class="form-sec">
+            <input type="text" name="name" placeholder="Name*" />
+            <input type="text" name="company" placeholder="Company" />
+            <input type="text" name="best-time" placeholder="Best time for a call?" />
+          </div>
+          <div style="display: flex; flex: 1; flex-direction: column;">
+            <input type="text" name="email" placeholder="Email*" />
+            <input type="text" name="phone" placeholder="Phone" />
+          </div>
+        </div>
+        <textarea style="flex: 1;" name="message" placeholder="Message"></textarea>
+        <input type="submit" name="submit" style="width: 100px;" />
+      </form>
+      <div class="spacer"></div>
+      <div class="col-6" id="location">
+        <iframe class="loc-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7928.578206452046!2d-116.21378538497187!3d43.613818722449274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2670ae60dba78b3c!2sExceed+Legal+PLLC%3A+Erik+Bolinder!5e0!3m2!1sen!2sus!4v1489805222197" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer">
+      <ul class="container">
+        <li><a href="tel:208-781-2800">208-781-2800</a></li>
+        <li><a href="mailto:info@exceed.legal">info@exceed.legal</a></li>
+        <li><a href="#location"><img src="assets/img/twitter.svg"></a></li>
+      </ul>
+    <div class="copy">2017 Exceed Legal PLLC. All Rights Reserved.</div>
+  </div>
+</footer>
 </body>
 </html>
