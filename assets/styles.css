@@ -330,6 +330,10 @@ a.learn-more:hover, a.learn-more:active {
   font-size: 1.5625rem;
   margin-bottom: 44px;
 }
+
+.team h3 {
+  text-transform: uppercase;
+}
 .team p {
   letter-spacing: 0.03625rem;
   line-height: 1.875rem;
