@@ -36,6 +36,25 @@ html, body {
 .container .col-10 {flex: 10;}
 .container .col-11 {flex: 11;}
 .container .col-12 {flex: 12;}
+.container .col-240 {
+  width: 240px;
+  margin-right: 47px;
+}
+.container .col-240 img {
+  width: 240px;
+}
+.container .col-94 {
+  width: 94px;
+  margin-right: 28px;
+  text-align: center;
+}
+.container .col-94 img {
+  max-width: 94px;
+}
+.bio .main.container, .practice-area .container {
+  display: flex;
+  padding: 0px 20px;
+}
 
 .container .col-img img {
   max-width: 100%;
@@ -93,12 +112,29 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: #141B41;
-  background-image: url(img/banner.jpg);
+  background-image: url(img/practice-areas.jpg);
   background-size: cover;
   background-position: top center;
   color: #fff;
   padding: 0px 20px;
   min-height: 480px;
+}
+.header.light {
+  height: unset;
+  background: unset;
+  color: #141B41;
+  min-height: unset;
+}
+.header.thin {
+  height: 360px;
+  min-height: unset;
+}
+.header.light .nav-bar {
+  width: 100%;
+  top: unset;
+  left: unset;
+  right: unset;
+  position: unset;
 }
 .nav-bar {
   position: absolute;
@@ -110,9 +146,13 @@ html, body {
 .logo {
   background-image: url(img/logo.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   width: 188px;
   height: 32px;
   text-indent: -9999px;
+}
+.header.light .logo {
+  background-image: url(img/logo_blue.svg);
 }
 ul.menu {
   list-style: none;
@@ -135,6 +175,18 @@ ul.menu li:last-child {
   color: #fff;
   text-decoration: none;
   border-bottom: 2px solid #fff;
+  transition: border ease-out 0.2s;
+}
+.header.light a, .header.light a:visited, .bio a, .bio a:visited {
+  color: #141B41;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(0,0,0,0);
+  transition: border ease-out 0.2s;
+}
+.header.light a:hover, .header.light a:active, .bio a:hover, .bio a:active {
+  color: #141B41;
+  text-decoration: none;
+  border-bottom: 2px solid #141B41;
   transition: border ease-out 0.2s;
 }
 .fancy-title {
@@ -259,6 +311,16 @@ a.learn-more:hover, a.learn-more:active {
   margin-bottom: 100px;
 }
 
+.feature-blocks a, a:visited {
+  color: #fff;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+.feature-blocks a:hover, a:active {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
 
 .feature-blocks .container {
   max-width: 920px;
@@ -326,13 +388,41 @@ a.learn-more:hover, a.learn-more:active {
 }
 .team h3 {
   text-align: center;
+}
+h3 {
   font-weight: 700;
   font-size: 1.5625rem;
   margin-bottom: 44px;
-}
-
-.team h3 {
   text-transform: uppercase;
+}
+.bio-ian, .bio-erik {
+  margin-bottom: 90px;
+}
+.bio h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.bio a {
+  font-weight: 600;
+}
+.bio .container {
+  max-width: 845px;
+}
+.bio h4 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.bio ul {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.bio p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.03625rem;
+  line-height: 1.9375rem;
+  margin: 10px 0px;
 }
 .team p {
   letter-spacing: 0.03625rem;
@@ -345,6 +435,28 @@ a.learn-more:hover, a.learn-more:active {
   width: 100%;
   margin-bottom: 30px;
 }
+.practice-area h3 {
+  text-transform: unset;
+}
+.practice-area {
+  letter-spacing: 0.01125rem;
+  line-height: 1.875rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+.practice-area .container:first-child {
+  margin-top: 44px;
+}
+.practice-area .container {
+  max-width: 800px;
+  margin-bottom: 44px;
+  display: flex;
+  padding: 0px 20px;
+  align-items: flex-start;
+}
+/*.practice-area .container .col-1 {
+  margin-right: 122px;
+}*/
 
 .footer {
   color: #fff;
@@ -462,6 +574,18 @@ a.learn-more:hover, a.learn-more:active {
   .nav-bar .container .menu {
     margin-top: 15px;
   }
+  .bio .container.main {
+    flex-direction: column;
+  }
+  .bio .container.main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container.main .col-240 {
+    margin: 0px 0px 30px;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 490px) {
   ul.jack li {
@@ -487,4 +611,22 @@ a.learn-more:hover, a.learn-more:active {
   .holder-2 {
     flex-direction: column !important;
   }
+  .holder-2 .col-8 {
+    height: unset;
+    flex: unset;
+  }
+  .practice-area .container {
+    flex-direction: column;
+  }
+  .container .col-94 {
+    margin: 20px 0px 15px;
+    text-align: left;
+  }
+  .practice-area .container:first-child .col-94 {
+    margin-top: 0px;
+  }
+}
+
+.clear {
+  clear: both;
 }

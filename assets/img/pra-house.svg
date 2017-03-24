@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="75px" height="72px" viewBox="0 0 75 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>House icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Practice-Areas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.326766304">
+        <g id="Desktop" transform="translate(-63.000000, -481.000000)" fill="#A7ACB2">
+            <g id="House-icon" transform="translate(63.000000, 481.000000)">
+                <path d="M6.5719697,27.2962963 L68.6969697,27.2962963 L68.6969697,71.8931713 L6.5719697,71.8931713 L6.5719697,27.2962963 Z M30.7316919,46.0678328 L30.7316919,71.8931713 L44.5372475,71.8931713 L44.5372475,46.0678328 L30.7316919,46.0678328 Z" id="Combined-Shape"></path>
+                <polygon id="Triangle" points="37.5 2 75 27.29375 0 27.29375"></polygon>
+                <polygon id="Rectangle-5" points="54.7121212 0 64.2698135 0 64.2698135 17.3939283 54.7121212 10.4634391"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

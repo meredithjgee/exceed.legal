@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="68px" height="95px" viewBox="0 0 68 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Rcket icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Practice-Areas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-63.000000, -654.000000)" fill="#D8D8D8">
+            <g id="Rcket-icon" transform="translate(63.000000, 654.000000)">
+                <path d="M34,94.3822189 C34,94.3822189 18,75.6142375 18,48 C18,20.3857625 34,0.306052977 34,0.306052977 C34,0.306052977 50,20.3857625 50,48 C50,75.6142375 34,94.3822189 34,94.3822189 Z M34,37 C37.3137085,37 40,34.3137085 40,31 C40,27.6862915 37.3137085,25 34,25 C30.6862915,25 28,27.6862915 28,31 C28,34.3137085 30.6862915,37 34,37 Z" id="Combined-Shape"></path>
+                <path d="M49.9345734,66.7387208 L63.3028183,74.5752362 L68,90.9291096 L42,87.0605097 C42,87.0605097 45.2474331,81.934091 47.2021412,76.9277518 C49.1568493,71.9214127 49.9345734,66.7387208 49.9345734,66.7387208 Z" id="Rectangle-6"></path>
+                <path d="M7.93457336,67 L21.3028183,74.8365154 L26,91.1903888 L0,87.3217889 C0,87.3217889 3.24743309,82.1953702 5.20214118,77.189031 C7.15684928,72.1826919 7.93457336,67 7.93457336,67 Z" id="Rectangle-6-Copy" transform="translate(13.000000, 79.095194) scale(-1, 1) translate(-13.000000, -79.095194) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
