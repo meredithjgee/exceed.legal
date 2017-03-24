@@ -112,12 +112,15 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: #141B41;
-  background-image: url(img/practice-areas.jpg);
+  background-image: url(img/banner.jpg);
   background-size: cover;
   background-position: top center;
   color: #fff;
   padding: 0px 20px;
   min-height: 480px;
+}
+.header.thin {
+  background-image: url(img/practice-areas.jpg);
 }
 .header.light {
   height: unset;
@@ -150,6 +153,13 @@ html, body {
   width: 188px;
   height: 32px;
   text-indent: -9999px;
+}
+.header .seperate {
+  display: inline-block;
+  margin-right: 14px;
+}
+.header .seperate:last-child {
+  margin-right: 0px;
 }
 .header.light .logo {
   background-image: url(img/logo_blue.svg);
@@ -592,6 +602,9 @@ h3 {
     margin-top: -80px;
     font-size: 1.8rem;
   }
+  .header.thin h2 {
+    font-size: 1.5em;
+  }
   .loc-map {
     width: 280px;
     height: 210px;
@@ -624,6 +637,11 @@ h3 {
   }
   .practice-area .container:first-child .col-94 {
     margin-top: 0px;
+  }
+  .header .seperate {
+    display: block;
+    margin-right: 0px;
+    margin-top: 5px;
   }
 }
 
