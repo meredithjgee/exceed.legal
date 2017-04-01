@@ -243,29 +243,38 @@ ul.jack li:nth-child(3) {
 }
 @-webkit-keyframes one {
   0%    { opacity: 0 }
-  17%   { opacity: 1 }
+  11%   { opacity: 1 }
+  22%   { opacity: 1 }
   33%   { opacity: 0 }
-  50%   { opacity: 0 }
-  67%   { opacity: 0 }
-  83%   { opacity: 0 }
+  44%   { opacity: 0 }
+  55%   { opacity: 0 }
+  66%   { opacity: 0 }
+  77%   { opacity: 0 }
+  88%   { opacity: 0 }
   100%  { opacity: 0 }
 }
 @-webkit-keyframes two {
   0%    { opacity: 0 }
-  17%   { opacity: 0 }
+  11%   { opacity: 0 }
+  22%   { opacity: 0 }
   33%   { opacity: 0 }
-  50%   { opacity: 1 }
-  67%   { opacity: 0 }
-  83%   { opacity: 0 }
+  44%   { opacity: 1 }
+  55%   { opacity: 1 }
+  66%   { opacity: 0 }
+  77%   { opacity: 0 }
+  88%   { opacity: 0 }
   100%  { opacity: 0 }
 }
 @-webkit-keyframes three {
   0%    { opacity: 0 }
-  17%   { opacity: 0 }
+  11%   { opacity: 0 }
+  22%   { opacity: 0 }
   33%   { opacity: 0 }
-  50%   { opacity: 0 }
-  67%   { opacity: 0 }
-  83%   { opacity: 1 }
+  44%   { opacity: 0 }
+  55%   { opacity: 0 }
+  66%   { opacity: 0 }
+  77%   { opacity: 1 }
+  88%   { opacity: 1 }
   100%  { opacity: 0 }
 }
 
@@ -643,6 +652,12 @@ h3 {
     margin-right: 0px;
     margin-top: 5px;
   }
+}
+
+a.no-underline, a.no-underline:active, a.no-underline:visited, a.no-underline:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transform: unset;
 }
 
 .clear {
