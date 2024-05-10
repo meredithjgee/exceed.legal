@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Host: http://www.exceed.legal/
+
+Sitemap: http://www.exceed.legal/sitemap.xml
