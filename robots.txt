@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Host: http://www.exceed.legal/
+Host: https://www.exceed.legal/
 
-Sitemap: http://www.exceed.legal/sitemap.xml
+Sitemap: https://www.exceed.legal/sitemap.xml
